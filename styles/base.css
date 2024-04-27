@@ -71,11 +71,11 @@ footer {
     display: grid;
     grid-template-columns: 10fr;
     grid-template-rows: 10fr;
-    background-color: rgb(217, 241, 181);
+    background-color: #90c7e2;
 }
 
 .aboutme {
-    background-color: #9bb3bf;
+    background-color: #c6d5dd;
     color: #282525;
     grid-column-start: 1;
     grid-column-end: 5;
