@@ -62,75 +62,73 @@ footer {
     padding: 40px 50px;
     margin-top: 60px;
     align-items: center;
-    grid-column: 1/11;
+    grid-column: 1/10;
 }
 
 
 
-.homegrid {
+.card {
     display: grid;
     grid-template-columns: 10fr;
-
+    grid-template-rows: 10fr;
+    background-color: rgb(217, 241, 181);
 }
 
-#aboutme {
-    background-color: #006699;
-    color: #fff;
-    text-align: center;
+.aboutme {
+    background-color: #9bb3bf;
+    color: #282525;
     grid-column-start: 1;
-    grid-column-end: 4;
-
-    margin-top: 10%;
+    grid-column-end: 5;
     grid-row-start: 1;
-    grid-row-end: 1;
+    grid-row-end: 5;
+    margin-right: 30%;
 
 }
 
-.mepic {
+.imgme {
     grid-column-start: 4;
     grid-column-end: 5;
-    grid-row-start: 3;
+    grid-row-start: 2;
     grid-row-end: 4;
     width: 300px;
     height: 300px;
 
 }
 
-.card {
-    grid-column: 2;
-    grid-row: 3;
-    text-align: center;
-    color: #080707;
-    border-color: black;
-    background-color: bisque;
-
-
+.parrafo {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 4;
+    text-align: left;
+    text-indent: 30px;
 }
 
-.p1 {
-
-    height: 300px;
-    left: 120px;
-    position: relative;
-    top: 120px;
+.imgbandera {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 5;
+    grid-column-end: 7;
     width: 300px;
+    height: 300px;
+}
+
+.parrafo2 {
+    grid-column-start: 4;
+    grid-column-end: 5;
+    grid-row-start: auto;
+}
+
+.webresources {
+    grid-column-start: 5;
+    grid-column-end: 8;
+    grid-row-start: 1;
+    grid-row-end: 5;
 
 }
 
-.grid-item {
-
-    grid-column: 4;
-    grid-row: 4;
-    text-align: center;
-    color: #080707;
-    border-color: black;
-    background-color: rgb(39, 150, 198);
-
-}
-
-
-.torre-card {
-    margin: 100px 0;
+.wresources {
+    margin-right: 40%;
 }
 
 /* Larger Views ******************************/
