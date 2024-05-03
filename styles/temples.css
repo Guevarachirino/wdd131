@@ -1,15 +1,37 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
     font-family: 'Roboto', sans-serif;
+}
+
+header {
+    background-color: #bbb;
+    display: flex;
+    align-items: right;
+    justify-content: right;
+    padding: 20px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+main {
+    margin: 0 auto;
 }
 
 nav {
     background-color: #3d8fc6;
     margin: 0 auto;
-    max-width: 100%;
+    max-width: 800px;
+    align-items: right;
+    justify-content: right;
 }
 
 nav ul {
     list-style-type: none;
+
 }
 
 nav a {
@@ -28,19 +50,34 @@ h2 {
     text-align: center;
 }
 
-.grid {
+.h1 {
+    color: #fff;
+    position: absolute;
+    left: 3%;
+    transform: translateY(10px);
+    font-size: 2rem;
+
+}
+
+/*.grid {
     display: grid;
     padding: 1rem;
     grid-gap: 1rem;
-    grid-template-columns: repeat(3, 400px);
+    grid-template-columns: repeat(1, 400px);
     grid-template-rows: 400px 400px;
     font-size: 1rem;
     margin-left: 10%;
     text-align: center;
+}*/
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    grid-gap: 70px;
+    place-items: center;
 }
 
 footer {
-    background-color: #006699;
+    background-color: #3d8fc6;
     padding: 16px 25px;
     color: #fff;
     margin-top: 60px;
@@ -49,10 +86,75 @@ footer {
     grid-column: 1/10;
 }
 
-/* Larger Views ******************************/
-@media (min-width: 640px) {
-    nav ul {
-        display: flex;
-        justify-content: right;
-    }
+/*footer {
+    background: wheat;
+    padding: 2rem;
+    text-align: center;
+    grid-column: 1 / 7;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+} */
+
+
+
+nav a:hover {
+    text-decoration: overline;
+}
+
+/* small view navigation */
+#menu {
+
+    display: block;
+    font-size: 2rem;
+    font-weight: 700;
+    text-decoration: none;
+    padding: .5rem .75rem;
+    background-color: #e85ea1;
+    color: chocolate;
+}
+
+#menu.open::before {
+    content: "❎";
+}
+
+.navigation {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    background-color: #333;
+    color: #fff;
+}
+
+.navigation a {
+    display: none;
+    padding: 1rem;
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+}
+
+.navigation a:hover {
+    background-color: #bbb;
+    color: #333;
+    font-weight: 700;
+}
+
+/* when the button is clicked - the open class is toggled (added/removed) */
+.open a {
+    display: block;
+}
+
+.active::before {
+    content: "📍";
+    /* just a wayfinding symbol for the user */
+}
+
+.stuff {
+    margin: .5m;
+    border: 1px solid rgba(0, 0, 0, .1);
+    background-color: #bed;
+    max-width: 580px;
+    height: 100vh;
+
 }
