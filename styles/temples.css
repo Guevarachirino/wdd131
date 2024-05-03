@@ -114,7 +114,7 @@ nav a:hover {
 }
 
 .navigation a {
-    display: none;
+    display: flex;
     padding: 1rem;
     text-align: center;
     text-decoration: none;

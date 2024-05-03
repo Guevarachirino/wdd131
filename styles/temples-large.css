@@ -13,3 +13,8 @@
         grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     }
 }
+
+#menu {
+    display: none;
+    /* hide hamburger button */
+}
