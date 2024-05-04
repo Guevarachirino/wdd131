@@ -153,9 +153,7 @@ nav a:hover {
     content: "≡";
 }
 
-nav {
-    background-color: tomato;
-}
+
 
 .navigation {
     list-style: none;
