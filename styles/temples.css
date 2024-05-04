@@ -66,6 +66,7 @@ h2 {
     grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
     grid-gap: 70px;
     place-items: center;
+    text-align: center;
 }
 
 footer {
