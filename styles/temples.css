@@ -67,6 +67,7 @@ nav a {
 .nav-links li a {
     color: #fff;
     text-decoration: none;
+    transition: color 0.3;
 
 }
 
@@ -145,6 +146,7 @@ footer {
         left: 0;
         margin: 0;
         text-align: center;
+        transition: all 0.3;
 
     }
 
