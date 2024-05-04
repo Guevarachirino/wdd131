@@ -83,12 +83,6 @@ nav a:hover {
     text-decoration: overline;
 }
 
-@media (max-width: 768px) {
-    .burgermenu {
-        display: flex;
-    }
-
-}
 
 .burgermenu {
     display: none;
@@ -103,4 +97,11 @@ nav a:hover {
     height: 3px;
     background-color: white;
     margin: 5px 0;
+}
+
+@media (max-width: 768px) {
+    .burgermenu {
+        display: flex;
+    }
+
 }
