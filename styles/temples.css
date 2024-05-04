@@ -190,7 +190,7 @@ nav {
 
 .navigation a:hover,
 navigation a:active {
-    color: white;
+    color: rgb(166, 224, 107);
     background-color: black;
 }
 
