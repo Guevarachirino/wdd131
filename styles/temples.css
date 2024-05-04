@@ -27,6 +27,7 @@ nav {
     max-width: 800px;
     flex-direction: row-reverse;
     margin-right: 10%;
+    gap: 20px;
 
 }
 
