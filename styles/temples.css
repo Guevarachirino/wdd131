@@ -188,8 +188,7 @@ nav {
     font-size: clamp(1rem, 2vmin, 1.5rem);
 }
 
-.navigation a:hover,
-navigation a:active {
+.navigation a:hover, navigation a:active {
     color: rgb(166, 224, 107);
     background-color: black;
 }
