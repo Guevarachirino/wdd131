@@ -25,6 +25,7 @@ nav {
     background-color: #3d8fc6;
     margin: 0 auto;
     max-width: 800px;
+    flex-direction: row-reverse;
 
 }
 
