@@ -58,6 +58,11 @@ nav a {
 
 }
 
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
 .nav-links {
     display: flex;
     gap: 20px;
