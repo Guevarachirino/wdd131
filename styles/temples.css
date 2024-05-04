@@ -151,4 +151,9 @@ footer {
 
     }
 
+    .nav-links.active {
+        padding-left: 0px;
+        display: flex;
+    }
+
 }
