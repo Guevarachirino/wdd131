@@ -42,13 +42,6 @@ day.innerHTML = `getDate(): <span class="highlight">${today.getDate()}</span>`;
 dayofweek.innerHTML = `getDay(): <span class="highlight">${today.getDay()}</span>`;
 
 
-const hamButton = document.querySelector('#menu');
-const navigation = document.querySelector('.navigation');
-
-hamButton.addEventListener('click', () => {
-    navigation.classList.toggle('open');
-    hamButton.classList.toggle('open');
-});
 
 
 //last modified
@@ -66,3 +59,14 @@ if (Number.isNaN(lastVisit) || lastModif > lastVisit) {
         alert("This page has been changed!");
     }
 }
+//hamb botton
+
+// Store the selected elements that we are going to use. 
+const mainnav = document.querySelector('.navigation')
+const hambutton = document.querySelector('#menu');
+
+// Add a click event listender to the hamburger button and use a callback function that toggles the list element's list of classes.
+hambutton.addEventListener('click', () => {
+    mainnav.classList.toggle('show');
+    hambutton.classList.toggle('show');
+});
