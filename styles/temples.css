@@ -83,7 +83,24 @@ nav a:hover {
     text-decoration: overline;
 }
 
+@media (max-width: 768px) {
+    .burgermenu {
+        display: flex;
+    }
+
+}
+
 .burgermenu {
     display: none;
+    flex-direction: column;
+    cursor: pointer;
 
+
+}
+
+.line {
+    width: 30px;
+    height: 3px;
+    background-color: white;
+    margin: 5px 0;
 }
