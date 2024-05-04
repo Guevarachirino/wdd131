@@ -178,7 +178,7 @@ nav a:hover {
 }
 
 .navigation a:hover,
-navigation a:active {
+.navigation a:active {
     color: rgb(166, 224, 107);
     background-color: black;
 }
