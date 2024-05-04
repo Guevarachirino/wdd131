@@ -26,6 +26,8 @@ nav {
     margin: 0 auto;
     max-width: 800px;
     flex-direction: row-reverse;
+    align-items: right;
+    justify-content: right;
 
 }
 
