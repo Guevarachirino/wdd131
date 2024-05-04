@@ -48,6 +48,15 @@ nav a {
     text-align: left;
 }
 */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    background-color: #3d8fc6;
+    padding: 20px 30px;
+    align-items: center;
+    color: white;
+
+}
 
 .nav-links {
     display: flex;
@@ -55,6 +64,15 @@ nav a {
     list-style: none;
 }
 
+.nav-links li a {
+    color: #fff;
+    text-decoration: none;
+
+}
+
+.nav-links li a:hover {
+    color: black;
+}
 
 
 h2 {
@@ -88,10 +106,10 @@ footer {
     grid-column: 1/10;
 }
 
-nav a:hover {
+/*nav a:hover {
     text-decoration: overline;
 }
-
+*/
 
 .burgermenu {
     display: none;
