@@ -11,7 +11,7 @@ body {
 header {
     background-color: #3d8fc6;
     display: flex;
-    align-items: right;
+    /*align-items: right;*/
     justify-content: right;
     padding: 20px;
     border: 1px solid rgba(0, 0, 0, 0.1);
