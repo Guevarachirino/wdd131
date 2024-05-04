@@ -19,7 +19,7 @@
     /* hide hamburger button */
 /*}*/
 
-/*@media (min-width: 37.5em) {
+@media (min-width: 37.5em) {
     h1 {
         font-size: 2.5rem;
         margin-left: 0;
@@ -34,7 +34,7 @@
     #menu {
         display: none;
         /* hide hamburger button */
-/*}
+}
 
     .navigation {
         flex-direction: row;
@@ -48,4 +48,4 @@
     .stuff {
         margin: 1rem auto;
     }
-}*/
+}
