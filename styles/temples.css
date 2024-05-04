@@ -85,14 +85,6 @@ h2 {
     text-align: center;
 }
 
-.h1 {
-    color: #fff;
-    position: absolute;
-    left: 3%;
-    transform: translateY(10px);
-    font-size: 2rem;
-
-}
 
 .grid {
     display: grid;
