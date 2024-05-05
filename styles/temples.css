@@ -78,6 +78,7 @@ nav a {
 
 .nav-links li a:hover {
     color: black;
+    text-decoration: wavy;
 }
 
 
@@ -124,4 +125,3 @@ footer {
     background-color: white;
     margin: 3px 0;
 }
-
