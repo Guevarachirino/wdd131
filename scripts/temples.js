@@ -44,11 +44,6 @@ dayofweek.innerHTML = `getDay(): <span class="highlight">${today.getDay()}</span
 
 
 
-//last modified
-
-
-const date = new Date(document.lastModified);
-document.getElementById("lastModif").innerHTML = date;
 //hamb botton
 
 // Store the selected elements that we are going to use. 
