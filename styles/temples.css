@@ -105,9 +105,7 @@ footer {
     grid-column: 1/10;
 }
 
-nav a:hover {
-    text-decoration: overline;
-}
+
 
 .burgermenu {
     display: none;
