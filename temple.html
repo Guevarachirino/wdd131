@@ -94,9 +94,19 @@
 
 <footer>
     <p>
-        <span id="year"></span> &copy; 2024 Melissa Abigail Chirino, EL Salvador
+        &copy; <span id="year"></span> Melissa Abigail Chirino, EL Salvador
     </p>
-    <p id="lastModif"> </p>
+    <script>
+        const year = document.querySelector("#year");
+        const today = new Date();
+        year.innerHTML = `<span class="highlight">${today.getFullYear()}</span>`;
+    </script>
+
+
+    <p style="color: rgb(208, 205, 26);">
+        Last Modification: <span id="lastModif"></span>
+    </p>
+
     <script>
         let text = document.lastModified;
         document.getElementById("lastModif").innerHTML = text;
