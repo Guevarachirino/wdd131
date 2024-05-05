@@ -70,7 +70,7 @@ nav a {
 }
 
 .nav-links li a {
-    color: #d45a5a;
+    color: #fff;
     text-decoration: none;
     transition: color 0.3;
 
@@ -84,6 +84,7 @@ nav a {
 h2 {
     text-align: center;
 }
+
 
 
 .grid {
