@@ -1,12 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>week3</title>
+    <meta name="description" content="Week3 Activity.">
+    <meta name="author" content="Melissa Abigail Chirino">
+    <link rel="stylesheet" href="styles/place.css">
+    <link rel="stylesheet" href="styles/place-large.css">
+    <script src="scripts/place.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap" rel="stylesheet">
 </head>
+
 <body>
-    
+    <header>
+        <div class="navbar">Madagascar</div>
+    </header>
+
+    <main class="grid">
+        <div class="dataelement">
+
+        </div>
+        <div class="primerelemento">Data</div>
+
+        <section>
+            <div class="hero">
+                <picture>
+                    <img src="images/madagascar.webp" alt="Temple name and location" width="100%">
+                </picture>
+            </div>
+
+
+
+
+        </section>
+
+    </main>
+
 </body>
-<footer></footer>
+
+<footer>
+
+    <p>
+        &copy; <span id="year"></span> Melissa Abigail Chirino, EL Salvador
+    </p>
+    <script>
+        const year = document.querySelector("#year");
+        const today = new Date();
+        year.innerHTML = `<span class="highlight">${today.getFullYear()}</span>`;
+    </script>
+
+
+    <p style="color: rgb(208, 205, 26);">
+        Last Modification: <span id="lastModif"></span>
+    </p>
+
+    <script>
+        let text = document.lastModified;
+        document.getElementById("lastModif").innerHTML = text;
+    </script>
+</footer>
+
 </html>
