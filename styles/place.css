@@ -65,12 +65,14 @@ body {
 }
 
 :root {
-    --bord: 1px solid #777;
+    --bord: 1px;
 }
 
 .datatable {
     width: 200px;
     margin-top: 2rem;
+    position: absolute;
+    transform: translate(75%, 37%);
 }
 
 .row {
@@ -92,7 +94,11 @@ body {
 
 .row:last-child {
     border-bottom: var(--bord);
-    background-color: #bbb;
+
+}
+
+.after::after {
+    content: " ⛅️";
 }
 
 footer {
