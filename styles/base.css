@@ -1,0 +1,51 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: #3366ff;
+    padding: 1em;
+    text-align: center;
+    color: aliceblue;
+}
+
+nav ul {
+    list-style: none;
+    padding: 1rem;
+    margin: 0;
+    background-color: black;
+
+}
+
+nav li {
+    display: inline;
+    /* Hace que los ítems del menú estén en una línea horizontal */
+    margin-right: 10rem;
+    /* Espacio entre los ítems del menú */
+    margin-left: 10rem;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+
+}
+
+nav a:hover {
+    text-decoration: underline;
+
+}
+
+footer {
+    background-color: #3366ff;
+    padding: 3rem;
+    text-align: center;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    margin: 0;
+}
