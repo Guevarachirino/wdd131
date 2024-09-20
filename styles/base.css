@@ -43,13 +43,31 @@ img {
     width: 200px;
     height: 200px;
     border-radius: 50px;
-    margin-top: 7rem;
+}
+
+#sobremi {
+    /* Arriba | Derecha | Abajo | Izquierda */
+    margin: 50px 0 0 3rem;
+
+}
+
+#sanvicente {
+    margin: 0 0 0 17rem;
+
+}
+
+.mifoto {
+    width: 200px;
+    height: 200px;
+    border-radius: 50px;
+    margin-left: 8rem;
 }
 
 .imagenbandera {
     width: 200px;
     height: 200px;
     border-radius: 50px;
+    margin-left: 3rem;
 }
 
 .contenido {
@@ -73,6 +91,7 @@ img {
     margin-left: 10rem;
     border: 3px solid black;
     border-radius: 20px;
+
 }
 
 .menusecundario a {
