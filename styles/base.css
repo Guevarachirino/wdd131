@@ -83,11 +83,11 @@ img {
 }
 
 .aboutme {
-    text-align: center;
     background-color: #3366ff;
-    padding: 9px;
+    padding: 1rem;
     margin-top: 0%;
-    width: 50rem;
+    margin-left: 0;
+    width: 68rem;
     border-radius: 20px 20px 0 0;
 
 }
