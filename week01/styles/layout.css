@@ -24,7 +24,7 @@ header {
 .left {
     background-color: #e2e2e2;
     grid-column: 1/10;
-
+    text-align: left;
 }
 
 .right {
