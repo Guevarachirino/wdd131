@@ -3,6 +3,5 @@ const actualyear = new Date().getFullYear();
 getyear.textContent = actualyear;
 
 
-
-let oLastModif = new Date(document.lastModified)
-oLastModif.textContent = `Last Modification: ${document.oLastModif}`;
+let text = document.lastModified;
+document.getElementById("oLastModif").innerHTML = text;

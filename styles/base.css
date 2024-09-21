@@ -1,7 +1,9 @@
+* {
+    margin-top: 0;
+}
+
 body {
     font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
 }
 
 header {
@@ -9,22 +11,23 @@ header {
     padding: 1em;
     text-align: center;
     color: aliceblue;
+    margin: 0%;
 }
 
 nav ul {
     list-style: none;
-    padding: 1rem;
-    margin: 0;
+    padding: 1.5rem;
     background-color: black;
+    width: 100%;
+    margin-right: 20rem;
+    display: flex;
 
 }
 
 nav li {
     display: inline;
     /* Hace que los ítems del menú estén en una línea horizontal */
-    margin-right: 10rem;
-    /* Espacio entre los ítems del menú */
-    margin-left: 10rem;
+    justify-content: space-between;
 }
 
 nav a {
@@ -40,7 +43,6 @@ nav a:hover {
 }
 
 img {
-    width: 200px;
     height: 200px;
     border-radius: 50px;
 }
@@ -53,6 +55,7 @@ img {
 
 #sanvicente {
     margin: 0 0 0 17rem;
+
 
 }
 
@@ -82,7 +85,7 @@ img {
 
 }
 
-.secciones {
+.card {
     display: flex;
 }
 
@@ -125,6 +128,7 @@ h3 {
     padding: 9px;
     margin-top: 0%;
     border-radius: 20px 20px 0 0;
+    border-bottom: 3px solid black;
 }
 
 footer {
@@ -134,4 +138,16 @@ footer {
     width: 100%;
     bottom: 0;
     margin: 0;
+}
+
+@media (min-width: 640px) {
+    nav ul {
+        display: flex;
+    }
+
+    nav ul li {
+        flex: 1 1 100%;
+    }
+
+
 }
