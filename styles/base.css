@@ -11,16 +11,17 @@ header {
     text-align: center;
     color: aliceblue;
     margin: 0%;
+    width: 100%;
 }
 
 nav ul {
     list-style: none;
     padding: 1.5rem;
     background-color: black;
-    margin-right: 20rem;
-    justify-content: space-around;
-    display: flex;
     width: 100%;
+    margin-right: 20rem;
+    display: flex;
+    justify-content: space-around;
 
 }
 
@@ -34,7 +35,6 @@ nav a {
     text-decoration: none;
     color: white;
     font-size: 16px;
-
 
 }
 
@@ -71,13 +71,12 @@ img {
     width: 200px;
     height: 200px;
     border-radius: 50px;
-    margin-left: 3rem;
+    margin-left: 25rem;
 }
 
-.contenido {
-    display: grid;
-    grid-template-columns: 2fr 1fr;
-    margin: 1rem;
+main {
+    display: flex;
+    margin: 3rem;
 }
 
 .articulos {
