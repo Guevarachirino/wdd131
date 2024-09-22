@@ -8,7 +8,6 @@ body {
 
 header {
     background-color: #3366ff;
-    padding: 1em;
     text-align: center;
     color: aliceblue;
     margin: 0%;
@@ -18,22 +17,24 @@ nav ul {
     list-style: none;
     padding: 1.5rem;
     background-color: black;
-    width: 100%;
     margin-right: 20rem;
+    justify-content: space-around;
     display: flex;
+    width: 100%;
 
 }
 
 nav li {
     display: inline;
     /* Hace que los ítems del menú estén en una línea horizontal */
-    justify-content: space-between;
+
 }
 
 nav a {
     text-decoration: none;
     color: white;
     font-size: 16px;
+
 
 }
 
@@ -74,8 +75,9 @@ img {
 }
 
 .contenido {
-    display: flex;
-    margin: 3rem;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    margin: 1rem;
 }
 
 .articulos {
@@ -138,16 +140,4 @@ footer {
     width: 100%;
     bottom: 0;
     margin: 0;
-}
-
-@media (min-width: 600px) {
-    nav ul {
-        display: flex;
-    }
-
-    nav ul li {
-        flex: 1 1 100%;
-    }
-
-
 }
