@@ -12,9 +12,14 @@ document.getElementById("oLastModif").innerHTML = text;
 
 const burgermenu = document.querySelector(".burgermenu")
 const navLinks = document.querySelector(".nav-links")
+const close = document.querySelector("#cerrar");
 
 // Add a click event listender to the hamburger button and use a callback function that toggles the list element's list of classes.
 burgermenu.addEventListener("click", () => {
     navLinks.classList.toggle("active");
 }
 )
+
+close.addEventListener("click", () => {
+    nav.classList.remove("visible");
+})
