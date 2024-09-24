@@ -1,0 +1,123 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+}
+
+/*header {
+    background-color: #3d8fc6;
+    display: flex;
+    align-items: right; este lo tengo que comentar despues
+    justify-content: space-between;
+    padding: 20px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+}
+*/
+main {
+    margin: 0 auto;
+}
+
+/*nav {
+    background-color: #3d8fc6;
+    margin: 0 auto;
+    max-width: 800px;
+    flex-direction: row-reverse;
+    margin-right: 10%;
+    gap: 20px;
+
+}
+
+nav ul {
+    list-style-type: none;
+
+}
+
+nav a {
+    display: block;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+    text-decoration: none;
+}
+
+#nava {
+    text-align: left;
+}
+*/
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    background-color: #3d8fc6;
+    padding: 20px 30px;
+    align-items: center;
+    color: white;
+
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.nav-links {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+}
+
+.nav-links li a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3;
+
+}
+
+.nav-links li a:hover {
+    color: black;
+}
+
+
+h2 {
+    text-align: center;
+}
+
+
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    grid-gap: 70px;
+    place-items: center;
+    text-align: center;
+}
+
+footer {
+    background-color: #3d8fc6;
+    padding: 16px 25px;
+    color: #fff;
+    margin-top: 60px;
+    align-items: center;
+    text-align: center;
+    grid-column: 1/10;
+}
+
+
+
+.burgermenu {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+
+
+}
+
+.line {
+    width: 30px;
+    height: 3px;
+    background-color: white;
+    margin: 3px 0;
+}

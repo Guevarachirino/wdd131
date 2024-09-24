@@ -1,0 +1,30 @@
+@media (max-width: 768px) {
+
+    .navbar {
+        position: relative;
+    }
+
+    .burgermenu {
+        display: flex;
+    }
+
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        width: 100%;
+        top: 100%;
+        left: 0;
+        background-color: #3d8fc6;
+        margin: 0;
+        text-align: center;
+        transition: all 0.3;
+
+    }
+
+    .nav-links.active {
+        padding-left: 0px;
+        display: flex;
+    }
+
+}
