@@ -8,18 +8,12 @@ getyear.textContent = actualyear;
 let text = document.lastModified;
 document.getElementById("oLastModif").innerHTML = text;
 
-//menu
-
-const burgermenu = document.querySelector(".burgermenu")
-const navLinks = document.querySelector(".nav-links")
-const close = document.querySelector("#cerrar");
 
 // Add a click event listender to the hamburger button and use a callback function that toggles the list element's list of classes.
-burgermenu.addEventListener("click", () => {
-    navLinks.classList.toggle("active");
-}
-)
+const hamButton = document.querySelector('#menu');
+const navigation = document.querySelector('.navigation');
 
-close.addEventListener("click", () => {
-    nav.classList.remove("visible");
-})
+hamButton.addEventListener('click', () => {
+    navigation.classList.toggle('open');
+    hamButton.classList.toggle('open');
+});
