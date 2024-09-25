@@ -66,38 +66,6 @@ main {
 }
 
 
-/*
-.navbar {
-    display: flex;
-    justify-content: space-between;
-    background-color: #3d8fc6;
-    padding: 20px 30px;
-    align-items: center;
-    color: white;
-
-}
-
-.logo {
-    font-size: 24px;
-    font-weight: bold;
-}
-
-.nav-links {
-    display: flex;
-    gap: 20px;
-    list-style: none;
-}
-
-.nav-links li a {
-    color: #fff;
-    text-decoration: none;
-    transition: color 0.3;
-
-}
-
-.nav-links li a:hover {
-    color: black;
-}*/
 
 
 h2 {
