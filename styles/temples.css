@@ -35,10 +35,14 @@ main {
 
 .navigation {
     display: flex;
+    justify-content: space-between;
+    background-color: #3d8fc6;
+    padding: 20px 30px;
+    align-items: center;
+    color: white;
     flex-direction: column;
     list-style: none;
-    background-color: #333;
-    color: #fff;
+
 }
 
 .navigation a {
