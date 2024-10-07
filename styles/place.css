@@ -12,17 +12,9 @@
     --bord: 1px solid #777;
 }
 
-.row {
-    display: grid;
-    grid-template-columns: 100px 100px;
-    align-items: center;
-    text-align: center;
-    position: relative;
-}
-
-.col {
-
-    padding: 10px;
+body {
+    background-color: var(--main-bg-color);
+    font-family: "Roboto", sans-serif;
 }
 
 header {
@@ -30,24 +22,70 @@ header {
     color: var(--color-white);
     padding: 20px;
     text-align: center;
-
-}
-
-body {
-    background-color: var(--main-bg-color);
 }
 
 .hero {
     margin-top: 25px;
 }
 
+.grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    /* Default to single column */
+    gap: 10px;
+}
+
+.row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    /* Two columns by default */
+    align-items: center;
+    text-align: center;
+}
+
+.col {
+    padding: 10px;
+}
+
+.dataOne,
+.weatherInformation {
+    background-color: rgba(245, 245, 220, 0.926);
+    border-radius: 7%;
+    padding: 35px;
+    margin: 10px 0;
+    /* Add margin for spacing */
+}
 
 footer {
     background-color: var(--second-color);
-    padding: 16px 25px;
+    padding: 29px 25px;
     color: #fff;
-    margin-top: 60px;
-    align-items: center;
     text-align: center;
-    grid-column: 1/10;
+    margin-top: 20px;
+}
+
+/* Responsive Styles */
+
+@media screen and (min-width: 850px) {
+    .grid {
+        display: grid;
+    }
+
+    .dataOne {
+        grid-column: 1;
+        position: absolute;
+        transform: translate(75%, 37%);
+        background-color: rgba(245, 245, 220, 0.926);
+        border-radius: 7%;
+        padding: 35px;
+    }
+
+    .weatherInformation {
+        position: absolute;
+        transform: translate(80rem, 55rem);
+        background-color: rgba(245, 245, 220, 0.926);
+        border-radius: 7%;
+        padding: 35px;
+
+    }
 }
