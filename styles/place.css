@@ -92,7 +92,7 @@ footer {
 
     }
 
-    .weather::after {
+    .weatherInformation h2::after {
         display: inline-flex;
         content: '';
         background-image: url('/images/weather_icon.svg');
