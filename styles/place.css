@@ -28,7 +28,7 @@ header {
     margin-top: 25px;
 }
 
-.hero img{
+.hero img {
     width: 100%;
 }
 
@@ -99,7 +99,7 @@ footer {
     .weatherInformation h2::after {
         display: inline-flex;
         content: '';
-        background-image: url('/images/weather_icon.svg');
+        background-image: url('/images/weathericon.svg');
         background-size: 50px 50px;
         height: 40px;
         width: 40px;
