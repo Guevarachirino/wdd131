@@ -78,7 +78,7 @@ footer {
     .dataOne {
         grid-column: 1;
         position: absolute;
-        transform: translate(75%, 37%);
+        transform: translate(65%, 37%);
 
         border-radius: 7%;
         padding: 35px;
@@ -86,7 +86,7 @@ footer {
 
     .weatherInformation {
         position: absolute;
-        transform: translate(80rem, 55rem);
+        transform: translate(70rem, 45rem);
         border-radius: 7%;
         padding: 35px;
 
@@ -96,7 +96,7 @@ footer {
         display: inline-flex;
         content: '';
         background-image: url('/images/weather_icon.svg');
-        background-size: 40px 40px;
+        background-size: 50px 50px;
         height: 40px;
         width: 40px;
 
