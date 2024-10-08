@@ -71,8 +71,18 @@ footer {
     margin-top: 20px;
 }
 
-.weatherInformation h2 ::after {
-    content: url(.weather-icon);
+.weather::after {
+    display: inline-flex;
+    content: '';
+
+    /* Using the background-image and
+           its related properties to add
+           the SVG content */
+    background-image: url('weather_icon.svg');
+    background-size: 40px 40px;
+    height: 40px;
+    width: 40px;
+
 }
 
 /* Responsive Styles */
@@ -86,7 +96,7 @@ footer {
         grid-column: 1;
         position: absolute;
         transform: translate(75%, 37%);
-        background-color: rgba(245, 245, 220, 0.926);
+
         border-radius: 7%;
         padding: 35px;
     }
@@ -94,7 +104,6 @@ footer {
     .weatherInformation {
         position: absolute;
         transform: translate(80rem, 55rem);
-        background-color: rgba(245, 245, 220, 0.926);
         border-radius: 7%;
         padding: 35px;
 
