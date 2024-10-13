@@ -75,13 +75,19 @@ const temples = [
         imageUrl:
             "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/mexico-city-mexico/400x250/mexico-city-temple-exterior-1518361-wallpaper.jpg"
     },
-    // Add more temple objects here...
+    // Agrega más objetos de templos aquí...
 ];
 
-createTempleCard();
+createTempleCard(temples); // Pasa el array completo
+
+const nonutahLink = document.querySelector("nonutah");
+
+nonutahLink.addEventListener("click", () => {
+    createTempleCard(temples.filter(temple => !temple.location.includes("Utah")));
+});
 
 function createTempleCard(filteredTemples) {
-    document.querySelector(".temple-grid").innerHTML = "";
+    document.querySelector(".res-grid").innerHTML = "";
     filteredTemples.forEach(temple => {
         let card = document.createElement("section");
         let name = document.createElement("h3");
@@ -91,9 +97,9 @@ function createTempleCard(filteredTemples) {
         let img = document.createElement("img");
 
         name.textContent = temple.templeName;
-        location.innerHTML = `<span class = "label">Location:</span> ${temple.location}`;
-        dedication.innerHTML = `<span class = "label">Dedicated:</span> ${temple.dedicated}`;
-        area.innerHTML = `<span class = "label">Size:</span> ${temple.area} sq ft`;
+        location.innerHTML = `<span class="label">Location:</span> ${temple.location}`;
+        dedication.innerHTML = `<span class="label">Dedicated:</span> ${temple.dedicated}`;
+        area.innerHTML = `<span class="label">Size:</span> ${temple.area} sq ft`;
         img.setAttribute("src", temple.imageUrl);
         img.setAttribute("alt", `${temple.templeName} Temple`);
         img.setAttribute("loading", "lazy");
@@ -103,6 +109,6 @@ function createTempleCard(filteredTemples) {
         card.appendChild(dedication);
         card.appendChild(area);
         card.appendChild(img);
-        document.querySelector(".temple-grid").appendChild(card);
+        document.querySelector(".res-grid").appendChild(card);
     });
 }
