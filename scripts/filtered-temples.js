@@ -84,6 +84,8 @@ const temples = [
         area: 156558,
         imageUrl: "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/washington-dc/400x250/washington_dc_temple-exterior-2.jpeg"
     },
+
+
 ];
 
 // Función para crear tarjetas de templos
