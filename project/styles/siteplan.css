@@ -12,6 +12,14 @@ main {
     margin: 0 auto;
 }
 
+:root {
+    --main-bg-color: #3f9541;
+    --second-color: #8C2121;
+    --color-black: #000000;
+    --color-white: #ffffff;
+    --bord: 1px solid #777;
+}
+
 
 
 /* small view navigation */
@@ -86,6 +94,14 @@ h1 {
 
 
 .res-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    grid-gap: 70px;
+    place-items: center;
+    text-align: center;
+}
+
+.grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
     grid-gap: 70px;
