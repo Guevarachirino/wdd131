@@ -1,0 +1,154 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+}
+
+main {
+    margin: 0 auto;
+}
+
+
+
+/* small view navigation */
+#menu {
+    font-size: 1.5rem;
+    border: 0;
+    background: none;
+    color: #000;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+}
+
+#menu::before {
+    content: "☰";
+}
+
+#menu.open::before {
+    content: "✖";
+}
+
+.navigation {
+    display: flex;
+    justify-content: right;
+    background-color: #3f9541;
+    padding: 20px 30px;
+    align-items: center;
+    color: white;
+    flex-direction: column;
+    list-style: none;
+    font-size: 18px;
+
+}
+
+.navigation a {
+    display: none;
+    padding: 1rem;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    ;
+}
+
+.navigation a:hover {
+    color: white;
+    font-weight: 700;
+
+}
+
+/* when the button is clicked - the open class is toggled (added/removed) */
+.open a {
+    display: block;
+}
+
+.active::before {
+    content: "📍";
+    /* just a wayfinding symbol for the user */
+}
+
+
+
+
+h2 {
+    text-align: center;
+    margin-top: 2rem;
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-size: 20px;
+}
+
+
+.res-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    grid-gap: 70px;
+    place-items: center;
+    text-align: center;
+}
+
+footer {
+    background-color: #3f9541;
+    padding: 16px 25px;
+    color: #fff;
+    margin-top: 60px;
+    align-items: center;
+    text-align: center;
+    grid-column: 1/10;
+}
+
+
+
+.burgermenu {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+
+
+}
+
+.line {
+    width: 30px;
+    height: 3px;
+    background-color: white;
+    margin: 3px 0;
+}
+
+.cerrar-menu {
+    display: none;
+
+}
+
+@media (min-width: 37.5em) {
+    h1 {
+        font-size: 1.6rem;
+        margin-left: 0;
+        text-align: center;
+    }
+
+
+    #menu {
+        display: none;
+        /* hide hamburger button */
+    }
+
+    .navigation {
+        flex-direction: row;
+
+    }
+
+    .navigation a {
+        display: block;
+        flex: 1 1 10%;
+    }
+
+    .stuff {
+        margin: 1rem auto;
+    }
+}
