@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="week 5">
+    <meta name="author" content="Melissa Chirino">
+
+    <!-- This start file was build by Paul Cheney  -->
+    <title>HTML5 Assigment week 5</title>
+
+    <!-- TELLS PHONES NOT TO LIE ABOUT THEIR WIDTH & stops the font from enlarging when a phone is turned sideways-->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+
+
+
+    <!-- STYLE SHEETS -->
+    <link href="css/normalize.css" rel="stylesheet">
+    <!-- phone-default -->
+    <link href="styles/review-small.css" rel="stylesheet">
+    <!-- enhance-tablet -->
+    <link href="css/medium.css" rel="stylesheet">
+    <!-- enhance-desktop -->
+    <link href="css/large.css" rel="stylesheet">
+    <script src="scripts/review.js" defer></script>
+
+
+
+</head>
+
+<body>
+    <!-- HEADER HERE -->
+    <header>
+        <h2>Product Review</h2>
+    </header>
+
+
+
+    <!-- CONTENT HERE -->
+    <main>
+        <h1>Thank You for Your Review!</h1>
+        <p>Your feedback has been recorded.</p>
+        <p>Number of reviews submitted: <span id="review-count">0</span></p>
+
+        <script>
+            // Retrieve the counter from localStorage or initialize to 0
+            let reviewCount = localStorage.getItem('reviewCount') || 0;
+            reviewCount++;
+            localStorage.setItem('reviewCount', reviewCount);
+            document.getElementById('review-count').innerText = reviewCount;
+        </script>
+
+
+
+    </main>
+
+    <!-- FOOTER HERE -->
+    <footer>
+        <p>©<span id="year"></span> &#127803; Melissa Abigail Chirino &#127803; El Salvador</p>
+        <p id="oLastModif"></p>
+    </footer>
+    <script src="js/scripts.js"></script>
+</body>
+
+</html>

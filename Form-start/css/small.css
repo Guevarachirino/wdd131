@@ -100,9 +100,20 @@ main {
 
 }
 
-.wf1 input[type="text"] {
+
+.wf1 input[type="text"],
+.wf1 input[type="tel"],
+.wf1 input[type="email"],
+.wf1 input[type="url"],
+.wf1 input[type="date"],
+.wf1 select,
+.wf1 input[type="number"]
+
+ {
     background-color: pink;
     display: block;
+    border: solid 1px gray;
+    border-radius: 6px;
 
 }
 
