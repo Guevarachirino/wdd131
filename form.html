@@ -18,6 +18,7 @@
 
     <!-- phone-default -->
     <link href="styles/review-small.css" rel="stylesheet">
+    <link href="styles/review-large.css" rel="stylesheet">
 
     <script src="scripts/review.js" defer></script>
 
@@ -61,12 +62,15 @@
             </div>
 
             <label for="review">Written Review:(optional)</label>
+            <br>
             <textarea id="review" name="review"></textarea>
-
-            <label for="username">Your Name:</label>
+            <br>
+            <label for="username">Your Name(optional)</label>
+            <br>
             <input type="text" id="username" name="username">
+            <br>
 
-            <input type="submit" value="Post Review">
+            <input id="button" type="submit" value="Post Review">
         </form>
     </main>
 
