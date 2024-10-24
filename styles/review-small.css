@@ -17,20 +17,49 @@ fieldset {
 }
 
 .wf1 div {
-    padding-top: 1rem;
+    padding-top: 3rem;
     font-size: .9rem;
 
+
+}
+
+.feature label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+#reviewlabel {
+    margin-top: 10px;
+}
+
+#review {
+    width: 20rem;
+    height: 10rem;
+    margin-top: 1.5rem;
+    margin-bottom: 3rem;
+
+
+}
+
+#name {
+    padding: 1.5rem;
 }
 
 .grid {
     display: grid;
+
 }
 
+#button {
+    background-color: green;
+    color: white;
+}
 
 #button,
 #username {
     width: 17rem;
     height: 2rem;
+    margin-bottom: 1.5rem;
 
 }
 

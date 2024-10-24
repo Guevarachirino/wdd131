@@ -99,6 +99,7 @@ main {
     padding-top: 1rem;
     color: #445ba9;
     font-size: .9rem;
+    display: flex;
 
 }
 
