@@ -20,7 +20,6 @@ body {
 }
 
 fieldset {
-    border: none;
 
     margin: 2rem 0;
 
@@ -30,9 +29,14 @@ fieldset {
 
 .wf1 div {
     padding-top: 1rem;
-    color: #445ba9;
     font-size: .9rem;
 
+}
+
+/*----------- MAIN --------------*/
+main {
+    padding: 0 2%;
+    min-height: 20rem;
 }
 
 /*----------- HEADER --------------*/
