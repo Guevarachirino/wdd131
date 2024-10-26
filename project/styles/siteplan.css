@@ -103,6 +103,7 @@ h1 {
     grid-gap: 70px;
     place-items: center;
     text-align: center;
+    border-radius: 10px;
 }
 
 .grid {
@@ -111,6 +112,7 @@ h1 {
     grid-gap: 70px;
     place-items: center;
     text-align: center;
+    border-radius: 30px;
 }
 
 footer {
@@ -143,6 +145,17 @@ footer {
 .cerrar-menu {
     display: none;
 
+}
+
+.star {
+    font-size: 30px;
+    cursor: pointer;
+    color: grey;
+}
+
+.star:hover,
+.star.selected {
+    color: gold;
 }
 
 @media (min-width: 37.5em) {

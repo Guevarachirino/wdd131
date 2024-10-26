@@ -18,6 +18,8 @@ hamButton.addEventListener('click', () => {
     hamButton.classList.toggle('open');
 });
 
+
+//galeria de imagenes, buucar foto de acuerdo al figcaption
 document.getElementById("search").addEventListener("input", function () {
     const query = this.value.toLowerCase();
     const figures = document.querySelectorAll("figure");
@@ -26,7 +28,7 @@ document.getElementById("search").addEventListener("input", function () {
         const img = figure.querySelector("img");
         const caption = figure.querySelector("figcaption").textContent.toLowerCase();
 
-        // Verifica si el alt de la imagen o el caption contiene el texto buscado
+
         if (img.alt.toLowerCase().includes(query) || caption.includes(query)) {
             figure.style.display = "block";  // Mostrar figura
         } else {
