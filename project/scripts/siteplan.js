@@ -36,3 +36,21 @@ document.getElementById("search").addEventListener("input", function () {
         }
     });
 });
+
+// video con imagenes 
+const images = [
+    'images/arroz-con-leche.webp',
+    'images/canela.webp',
+    'images/ingredientes.webp' // Agrega todas las imágenes que quieras
+];
+
+let currentIndex = 0;
+const videoElement = document.getElementById('video');
+
+function changeImage() {
+    currentIndex = (currentIndex + 1) % images.length; // Cambia al siguiente índice
+    videoElement.src = images[currentIndex]; // Cambia la imagen
+}
+
+// Cambia la imagen cada 2 segundos (2000 ms)
+setInterval(changeImage, 4000);

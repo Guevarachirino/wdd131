@@ -3,7 +3,9 @@ body {
     margin: 0;
     padding: 0;
     background-color: #f9f9f9;
+    height: 100vh;
 }
+
 
 header {
     background-color: #4CAF50;
@@ -20,7 +22,8 @@ h2 {
     color: #4CAF50;
 }
 
-ul, ol {
+ul,
+ol {
     margin: 10px 0;
 }
 
@@ -51,4 +54,54 @@ footer {
     position: fixed;
     bottom: 0;
     width: 100%;
+}
+
+
+
+/* probando.css */
+
+/* Estilos generales */
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 10px;
+    /* Espaciado para móviles */
+}
+
+.video-container {
+    width: 100%;
+    /* Asegúrate de que el contenedor ocupe el 100% */
+    max-width: 640px;
+    /* Tamaño máximo */
+    height: auto;
+    /* Altura automática */
+}
+
+#video {
+    width: 100%;
+    height: auto;
+    /* Mantiene la relación de aspecto */
+}
+
+/* Media Query para pantallas pequeñas */
+@media (max-width: 600px) {
+    header h1 {
+        font-size: 1.5em;
+        /* Ajusta el tamaño de la fuente */
+    }
+
+    input[type="text"] {
+        width: 100%;
+        /* Campo de búsqueda ocupa todo el ancho */
+        margin: 10px 0;
+        /* Espaciado vertical */
+    }
+
+    main a {
+        display: block;
+        /* Cada enlace en una nueva línea */
+        margin: 5px 0;
+        /* Espaciado entre enlaces */
+    }
 }
