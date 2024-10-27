@@ -35,40 +35,58 @@
                 <h2>My favorite dessert </h2>
 
                 <div>
-                    <h2> Rice Pudding</h2>
+                    <h2> Salvadoran Rice Pudding (Arroz con Leche) Recipe</h2>
+                    <br><br>
+
 
                     <div class="video-container">
+                        <source srcset="images/arroz-con-leche.webp" media="(min-width: 850px)">
                         <img id="video" src="images/arroz-con-leche.webp" alt="Imagen de Video">
                     </div>
 
-                    <!-- <img src="images/arrozconleche.jpg" alt="arrozconleche" width="400" height="400" loading="lazy"
-                        class="food-image"> -->
-                    <br><br>
 
-                    <h3>Ingredients</h3>
-                    <br>
 
-                    <div>
+
+                    <div class="directions">
+                        <h3>Ingredients</h3>
+                        <br>
                         <ul style="list-style: none;">
-                            <li>1 Cup rice </li>
-                            <li>3 Cups water </li>
-                            <li>3 Cups organic whole milk</li>
-                            <li>Cinnamon</li>
-                            <li>1 Can Evaporated milk</li>
-                            <li>1 Condensed milk</li>
-                            <li>Salt</li>
+                            <li>1 cup long-grain white rice </li>
+                            <li>4 cups water </li>
+                            <li>1 can (12 oz) evaporated milk/li>
+                            <li>1 can (14 oz) sweetened condensed milk</li>
+                            <li>1 cup whole milk (or more for desired creaminess)</li>
+                            <li>1 cinnamon stick</li>
+                            <li>1/2 teaspoon vanilla extract</li>
+                            <li>Ground cinnamon for serving (optional)</li>
+                            <li>Raisins (optional)</li>
 
                         </ul>
-                    </div>
-                    <br>
 
-                    <h3> Directions</h3>
-                    <p>Combine water, cinnamon and pinch of salt in a large sauce pan and bring to a boil. After that
-                        add reduce the heat to low and add the rice and organic whole milk, evaporated milk and
-                        condensed milk. Once the rice got a soft and creamy consistency (about 20 to 25 minutes), remove
-                        it from the heat.
-                        Our rice pudding is ready!! You can enjoy
-                        It warm or cold add a little cinnamon to decorate. </p>
+                        <br>
+
+                        <h3> Directions</h3>
+                        <p>Cook the Rice: In a medium saucepan, bring 4 cups of water to a boil. Add the rice and a
+                            pinch of salt. Reduce heat to low and simmer for about 15-20 minutes, or until the rice is
+                            tender and most of the water is absorbed. Drain any excess water if necessary. </p>
+                        <br>
+                        <p>Combine Ingredients: In the same saucepan, add the cooked rice, evaporated milk, sweetened
+                            condensed milk, whole milk, cinnamon stick, and vanilla extract. Stir to combine.</p>
+                        <br>
+                        <p>Simmer: Cook over medium heat, stirring frequently, until the mixture thickens and becomes
+                            creamy (about 15-20 minutes). Be careful not to let it boil over.</p>
+                        <br>
+                        <p>
+                            Add Raisins: If using, stir in raisins during the last few minutes of cooking.
+                        </p>
+                        <br>
+                        <p>Cool and Serve: Remove the cinnamon stick and let the pudding cool slightly. Serve warm or
+                            chilled. Sprinkle with ground cinnamon if desired.</p>
+                        <br>
+                        <p>Enjoy your delicious Salvadoran rice pudding! It is a comforting dessert that is perfect for
+                            any occasion.</p>
+                    </div>
+
                 </div>
             </section>
 
@@ -76,22 +94,24 @@
 
 
         </div>
-        <h2>Rating</h2>
-        <div class="rating">
-            <span class="star" data-value="1">★</span>
-            <span class="star" data-value="2">★</span>
-            <span class="star" data-value="3">★</span>
-            <span class="star" data-value="4">★</span>
-            <span class="star" data-value="5">★</span>
-        </div>
-        <div id="ratingMessage"></div>
+        <form method="get" action="thankyou.html">
+            <h2>Rating</h2>
+            <div class="rating">
+                <span class="star" data-value="1">★</span>
+                <span class="star" data-value="2">★</span>
+                <span class="star" data-value="3">★</span>
+                <span class="star" data-value="4">★</span>
+                <span class="star" data-value="5">★</span>
+            </div>
+            <div id="ratingMessage"></div>
 
-        <h2>Comments</h2>
-        <textarea id="comment" placeholder="Leave your comment here..."></textarea><br>
-        <button id="submitComment">Send Comment</button>
+            <h2>Comments</h2>
+            <textarea id="comment" placeholder="Leave your comment here..."></textarea><br>
+            <button id="submitComment">Send Comment</button>
 
-        <h3>Comments:</h3>
-        <ul id="commentList"></ul>
+            <h3>Comments:</h3>
+            <ul id="commentList"></ul>
+        </form>
     </main>
     <footer>
         <p>©<span id="year"></span> &#127803; Melissa Abigail Chirino &#127803; El Salvador</p>

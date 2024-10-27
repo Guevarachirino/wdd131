@@ -41,7 +41,6 @@ document.getElementById("search").addEventListener("input", function () {
 const images = [
     'images/arroz-con-leche.webp',
     'images/canela.webp',
-    'images/ingredientes.webp' // Agrega todas las imágenes que quieras
 ];
 
 let currentIndex = 0;
@@ -52,5 +51,35 @@ function changeImage() {
     videoElement.src = images[currentIndex]; // Cambia la imagen
 }
 
-// Cambia la imagen cada 2 segundos (2000 ms)
+// Cambia la imagen cada 4 segundos (4000 ms)
 setInterval(changeImage, 4000);
+
+
+document.getElementById('submitComment').addEventListener('click', function () {
+    const commentText = document.getElementById('comment').value;
+    if (commentText) {
+        const li = document.createElement('li');
+        li.textContent = commentText;
+        document.getElementById('commentList').appendChild(li);
+        document.getElementById('comment').value = ''; // Limpiar el textarea
+    }
+});
+
+// Manejo de calificación
+const stars = document.querySelectorAll('.star');
+let ratingValue = 0;
+
+stars.forEach(star => {
+    star.addEventListener('click', function () {
+        ratingValue = this.getAttribute('data-value');
+        document.getElementById('ratingMessage').textContent = `You rated this ${ratingValue} star(s)`;
+
+        stars.forEach(s => {
+            s.classList.remove('selected'); // Limpiar selección anterior
+        });
+
+        for (let i = 0; i < ratingValue; i++) {
+            stars[i].classList.add('selected'); // Marcar estrellas seleccionadas
+        }
+    });
+});
