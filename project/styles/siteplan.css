@@ -101,7 +101,7 @@ h1 {
 
 .res-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(390px, 1fr));
     grid-gap: 70px;
     place-items: center;
     text-align: center;
